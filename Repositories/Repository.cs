@@ -10,11 +10,12 @@ namespace Repositories
         public DbSet<Locacao> Locacoes { get; set; }
         public DbSet<VeiculoLocacao> VeiculoLocacao { get; set; }
         
-        protected override void OnConfiguring (DbContextOptionsBuilder options) {
-
-           
+         protected override void OnConfiguring(DbContextOptionsBuilder options)
+        {
+            options.UseMySql("Server=localhost;User Id=root;Database=locadoradb2");
+        }
     }
-  }
 }
+
 
 

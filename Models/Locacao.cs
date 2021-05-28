@@ -16,9 +16,13 @@ namespace Models
             this.LocacaoId = locacaoId;
             this.ClienteId = clienteId;
             this.DtLocacao = dtLocacao;
+            this.Veiculo = Veiculo;
 
         }
-      
+
+ 
+
+        
         public int LocacaoId { get; set; }
         public int ClienteId { get; set; }
         public virtual Cliente Cliente { get; set; }
@@ -60,7 +64,7 @@ namespace Models
             Veiculo.Add(VeiculoLocacao);
             veiculo.Locacoes.Add(VeiculoLocacao);
         }
-        /*public override string ToString()
+        public override string ToString()
         {
             var db = new Context();
             Cliente cliente = (
@@ -81,7 +85,7 @@ namespace Models
             {
                 foreach (int id in veiculos)
                 {
-                    Veiculo veiculo = Veiculo.GetVeiculos();
+                    Veiculo veiculo = Models.Veiculo.GetVeiculo(id);
                     strVeiculos += $"    Id: {veiculo.VeiculoId} - Nome: {veiculo.MarcaVeiculo}\n";
                     valorTotal += veiculo.Valor;
                 }
@@ -94,7 +98,7 @@ namespace Models
                 "   Veiculos:\n" +
                 strVeiculos;
             return retorno;
-        }*/
+        }
         public static List<Locacao> GetLocacoes()
         {
             var db = new Context();

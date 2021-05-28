@@ -29,7 +29,7 @@ namespace Views
             lvVeiculos.Location = new Point(20,60);
             lvVeiculos.View = Details;
             ListViewItem veiculos = new ListViewItem();
-            System.Collections.IList list = VeiculoController.GetVeiculos();
+            System.Collections.IList list = VeiculoController.GetVeiculo();
             for (int i = 0; i < list.Count; i++)
             {
                 Veiculos veiculo = (Veiculos)list[i];

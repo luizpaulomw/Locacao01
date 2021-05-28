@@ -15,7 +15,7 @@ namespace Models {
                 where VeiculoLocacao.LocacaoId == LocacaoId
                 select VeiculoLocacao).ToList();
         }
-        public void setFilme(){
+        public void setVeiculo(){
             var db = new Context();
             Veiculo = (from Veiculo in db.Veiculos
                 where Veiculo.VeiculoId == VeiculoId

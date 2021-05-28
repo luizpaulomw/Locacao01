@@ -25,7 +25,7 @@ namespace Controllers {
         public static Veiculo GetVeiculo (int idVeiculos){
             return Veiculo.GetVeiculo(idVeiculos);
         }
-        public static List<Veiculo> GetVeiculos (){
+        public static List<Veiculo> GetVeiculo (){
             return Veiculo.GetVeiculos();
         }
     }

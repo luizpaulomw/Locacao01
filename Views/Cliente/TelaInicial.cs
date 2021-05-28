@@ -1,6 +1,7 @@
 using System;
 using System.Windows.Forms;
 using System.Drawing;
+using Repositories;
 
 namespace Views
 {
@@ -14,9 +15,9 @@ namespace Views
         Library.Botao btnSair;
         public TelaInicial()
         {
-            this.Text = "BLOCKBUSTER";
+            this.Text = "Locadora de Carro";
             lblTitulo = new Label();
-            lblTitulo.Text = "BLOCKBUSTER";
+            lblTitulo.Text = "  ";
             lblTitulo.Location = new Point(110,10);
             this.Controls.Add(lblTitulo);
             

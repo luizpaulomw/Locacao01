@@ -44,7 +44,7 @@ namespace Views
             lvVeiculos.View = Details;
             ListViewItem veiculos = new ListViewItem();
             lvVeiculos.CheckBoxes = true;
-            foreach (Veiculo veiculo in VeiculoController.GetVeiculos())
+            foreach (Veiculo veiculo in VeiculoController.GetVeiculo())
             {
                 ListViewItem lvVeiculos = new ListViewItem(veiculo.VeiculoId.ToString());
                 lvVeiculos.SubItems.Add(veiculo.MarcaVeiculo);
